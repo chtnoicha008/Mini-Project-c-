@@ -288,7 +288,7 @@ void order_menu()
     order_menu();
     }
 }
-void Report()
+void Report()                                                                   //รายงานการขายไม่ออก
 {
     cin.ignore();
     clear_display();
@@ -320,7 +320,7 @@ void Report()
             com[loop_chack][1] = Name_ar[ma];
             cin.ignore();
 }
-void Total_pay()
+void Total_pay()                                                                    //คิดเงินไม่ได้
 {
     char Ex;
     cin.ignore();
@@ -328,9 +328,9 @@ void Total_pay()
     cout<<"Total Pay :        ";
     cout<<"Exit : [E] : ";
     cin>>Ex;
-    if(Ex == 'E')
+    if(Ex == 'E' || 'e')
     {
-        main();
+        Menu();
     }
     cin.ignore();
 }
